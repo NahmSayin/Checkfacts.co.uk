@@ -1,0 +1,217 @@
+/*body*/
+body{
+	font:15px/1.5 Verdana;
+	padding:0;
+	margin:0;
+	background-color:#FFFFFF;
+}
+
+body h2{
+	font-family: bookman old style;
+}
+/*global*/
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+/*header all pages*/
+header{
+	background:#008080;
+	color:#FFFFFF;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:#800000 3px solid; 
+}
+
+header a{
+    color:#FFFFFF;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:16px;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding:0 20px 0 20px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+}
+
+header a:hover{
+	color:#800000;
+	font-weight:bold;
+}
+
+/*showcase*/
+#showcase{
+	min-height:500px;
+	background:url("/Users/nahomalem/Desktop/website /img/big-ben.jpg") 0 -350px;
+	background-repeat:no-repeat;
+	text-align:center;
+	color:#FFFFFF;
+	margin-bottom:0px;
+}
+#showcase h1{
+	margin-top:100px;
+	font-size:55px;
+	margin-bottom:10px;
+}
+
+#showcase p{
+	font-size:20px;
+	color:#FFFFFF;
+}
+
+/*footer*/
+footer{
+	padding:10px;
+	color:#FFFFFF;
+	background-color:#800000;
+	text-align:center;
+}
+
+/*blog page footer*/
+#footer{
+	margin-top:455px;
+}
+
+
+/*all page titles*/
+
+h2{
+	text-align:center;
+	font-size:50px;
+	color:#800000;
+	margin-bottom:-15px;
+}
+
+/*all tables*/
+table{
+	width:100%;
+	padding:25px;
+}
+
+td{
+	padding:10px;
+	font-weight:bold;
+	text-align: justify;
+    text-justify: inter-word;
+    vertical-align: top;
+}
+
+th{
+	font-size:30px;
+	color:#FFFFFF;
+}
+
+/*captions*/
+
+figure{
+	text-align:center;
+	font-weight:normal;
+	color:black;
+}
+            
+
+/*small print*/
+/*This will make all paragraphs on every page grey.May be better to create a class
+            or assign colour manually everywhere*/
+p{
+	color:grey;
+	font-style: oblique;
+}
+
+td p{
+	color:#000000;
+	font-style:normal;
+}
+/*image sizes are specificed in the HTML page kensington.html*/
+
+/*kensington page table answers*/
+/*Questions*/
+#kensington tbody>:nth-child(even){
+	text-align:center;
+}
+/*Answers*/
+#kensington	tbody>:nth-child(odd){
+	font-size:x-large;
+	background-color:#000000;
+	color:#FFFFFF;
+}
+
+/*evidence table alignment*/
+#evidence{
+	margin-left: 45px;
+}
+
+/*Cookie banner*/
+#cookie-law { 
+    max-width:940px;
+    background:#EEEADD; 
+    margin:10px auto 0; 
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+}
+ 
+#cookie-law p { 
+    padding:10px; 
+    font-size:1.2em; 
+    font-weight:bold; 
+    text-align:center; 
+    color:#682008; 
+    margin:0;
+}
+
+/*responsiveness/mediaQueries*/
+@media(max-width:768px){
+	header #branding,
+	header nav,
+	header nav li,{
+		float:none;
+		text-align:center;
+		width:100%;
+	}
+
+	#showcase h1{
+		margin-top:40px;
+	}
+    #showcase{
+    	background-position:center;
+    }
+
+    #kensington{
+    	table-layout: fixed;
+    	width:100%;
+    }
+    #evidence{
+    	table-layout: fixed;
+    	width:100%;
+    }
+    table img{
+    	width:100%;
+    	height:100%;
+    }
+}   
+
+
+
